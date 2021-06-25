@@ -21,12 +21,12 @@ const db = mysql.createConnection({
   database: 'heroku_3da9c0f00237f97',
 });
 
-db.connect((err) => {
-  if (err) {
-    throw err;
-  }
-  console.log("connected to db");
-});
+// db.connect((err) => {
+//   if (err) {
+//     throw err;
+//   }
+//   console.log("connected to db");
+// });
 
 app.post('/addBatch', (req, res) => {
   let name = req.body.name;
